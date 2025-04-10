@@ -1,0 +1,16 @@
+{
+  "scriptFile" : "../api-azure-gestion-1.0-SNAPSHOT.jar",
+  "entryPoint" : "api.azure.function.UserFunction.createUser",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "direction" : "in",
+    "name" : "req",
+    "route" : "users",
+    "methods" : [ "POST" ],
+    "authLevel" : "FUNCTION"
+  }, {
+    "type" : "http",
+    "direction" : "out",
+    "name" : "$return"
+  } ]
+}

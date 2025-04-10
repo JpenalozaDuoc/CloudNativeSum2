@@ -1,0 +1,12 @@
+api\azure\model\Role.class
+api\azure\connection\DatabaseConnection.class
+api\azure\Function.class
+api\azure\service\UserService.class
+api\azure\model\UserRole.class
+api\azure\service\RoleService.class
+api\azure\exception\RoleNotFoundException.class
+api\azure\function\RoleFunction.class
+api\azure\function\UserFunction.class
+api\azure\function\UserRoleFunction.class
+api\azure\service\UserRoleService.class
+api\azure\model\User.class

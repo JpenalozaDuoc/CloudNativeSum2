@@ -1,0 +1,16 @@
+{
+  "scriptFile" : "../api-azure-gestion-1.0-SNAPSHOT.jar",
+  "entryPoint" : "api.azure.function.RoleFunction.updateRole",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "direction" : "in",
+    "name" : "req",
+    "route" : "roles/{id}",
+    "methods" : [ "PUT" ],
+    "authLevel" : "FUNCTION"
+  }, {
+    "type" : "http",
+    "direction" : "out",
+    "name" : "$return"
+  } ]
+}

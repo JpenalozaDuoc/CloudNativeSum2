@@ -1,0 +1,15 @@
+{
+  "scriptFile" : "../api-azure-gestion-1.0-SNAPSHOT.jar",
+  "entryPoint" : "api.azure.Function.run",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "direction" : "in",
+    "name" : "req",
+    "methods" : [ "GET", "POST" ],
+    "authLevel" : "ANONYMOUS"
+  }, {
+    "type" : "http",
+    "direction" : "out",
+    "name" : "$return"
+  } ]
+}

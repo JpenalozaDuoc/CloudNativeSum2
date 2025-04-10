@@ -1,0 +1,16 @@
+{
+  "scriptFile" : "../api-azure-gestion-1.0-SNAPSHOT.jar",
+  "entryPoint" : "api.azure.function.RoleFunction.deleteRole",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "direction" : "in",
+    "name" : "req",
+    "route" : "roles/{id}",
+    "methods" : [ "DELETE" ],
+    "authLevel" : "FUNCTION"
+  }, {
+    "type" : "http",
+    "direction" : "out",
+    "name" : "$return"
+  } ]
+}
